@@ -1,0 +1,9 @@
+{
+	"name": "CloudSampleDataFactory",
+	"location": "francecentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "14082296-5c2b-4a10-b3c4-a1070ab76d27",
+		"tenantId": "412be8a1-183a-4b18-a0f0-949222433ec3"
+	}
+}
