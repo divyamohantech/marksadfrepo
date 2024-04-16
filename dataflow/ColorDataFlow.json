@@ -18,6 +18,13 @@
 						"type": "DatasetReference"
 					},
 					"name": "Panelsource"
+				},
+				{
+					"dataset": {
+						"referenceName": "ColorToolDataset",
+						"type": "DatasetReference"
+					},
+					"name": "colorToolsource"
 				}
 			],
 			"sinks": [],
@@ -83,7 +90,11 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
-				"     format: 'table') ~> Panelsource"
+				"     format: 'table') ~> Panelsource",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> colorToolsource"
 			]
 		}
 	}
