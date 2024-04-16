@@ -1,0 +1,169 @@
+{
+	"name": "inCSVDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlCOLORDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Color_Tool",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Color_Chip_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DateTime",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Color_Chip_Source",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Scheme",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Instrument",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Geometry",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i400",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i410",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i420",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i430",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i440",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i450",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i460",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i470",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i480",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i490",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i500",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i510",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i520",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i530",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i5Color1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i550",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i560",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i570",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i580",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i590",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i600",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i610",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i620",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i630",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i640",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i650",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i660",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i670",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i680",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i690",
+				"type": "nvarchar"
+			},
+			{
+				"name": "i700",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "InCSV"
+		}
+	}
+}
