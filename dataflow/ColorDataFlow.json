@@ -6,14 +6,84 @@
 		"typeProperties": {
 			"sources": [
 				{
+					"dataset": {
+						"referenceName": "inCSVDataset",
+						"type": "DatasetReference"
+					},
 					"name": "source1"
+				},
+				{
+					"dataset": {
+						"referenceName": "PanelDataset",
+						"type": "DatasetReference"
+					},
+					"name": "Panelsource"
 				}
 			],
 			"sinks": [],
 			"transformations": [],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> source1"
+				"source(output(",
+				"          Color_Tool as string,",
+				"          Color_Chip_Name as string,",
+				"          DateTime as string,",
+				"          Color_Chip_Source as string,",
+				"          Scheme as string,",
+				"          Instrument as string,",
+				"          Geometry as string,",
+				"          i400 as string,",
+				"          i410 as string,",
+				"          i420 as string,",
+				"          i430 as string,",
+				"          i440 as string,",
+				"          i450 as string,",
+				"          i460 as string,",
+				"          i470 as string,",
+				"          i480 as string,",
+				"          i490 as string,",
+				"          i500 as string,",
+				"          i510 as string,",
+				"          i520 as string,",
+				"          i530 as string,",
+				"          i5Color1 as string,",
+				"          i550 as string,",
+				"          i560 as string,",
+				"          i570 as string,",
+				"          i580 as string,",
+				"          i590 as string,",
+				"          i600 as string,",
+				"          i610 as string,",
+				"          i620 as string,",
+				"          i630 as string,",
+				"          i640 as string,",
+				"          i650 as string,",
+				"          i660 as string,",
+				"          i670 as string,",
+				"          i680 as string,",
+				"          i690 as string,",
+				"          i700 as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> source1",
+				"source(output(",
+				"          PANEL_ID as integer,",
+				"          COLOR_CHIP_NAME as string,",
+				"          IS_METALLIC as integer,",
+				"          CREATE_USER_ID as integer,",
+				"          CREATE_DATE as timestamp,",
+				"          NOTES as string,",
+				"          IS_PUBLIC as integer,",
+				"          ENTITY_ID as integer,",
+				"          IS_INACTIVE as integer,",
+				"          AUDIT_SEARCH_INDEX_DATE as timestamp,",
+				"          IS_FLAGGED as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> Panelsource"
 			]
 		}
 	}
