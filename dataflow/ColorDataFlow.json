@@ -1,0 +1,15 @@
+{
+	"name": "ColorDataFlow",
+	"properties": {
+		"description": "ss",
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				""
+			]
+		}
+	}
+}
