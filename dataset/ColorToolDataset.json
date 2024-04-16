@@ -1,5 +1,5 @@
 {
-	"name": "ColorTool",
+	"name": "ColorToolDataset",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlCOLORDatabase",
