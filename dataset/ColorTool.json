@@ -1,0 +1,16 @@
+{
+	"name": "ColorTool",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlCOLORDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "COLOR_TOOL"
+		}
+	}
+}
